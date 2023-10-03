@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root{
+    --main-font: 'Poppins', sans-serif;
+
+    --black-color: #19191c;
+    --code1-color: #9A3B3B;
+    --code2-color: #C08261;
+    --code3-color: #E2C799;
+    --code4-color: #F2ECBE;
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: var(--code2-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--code3-color);
+  margin-top: 2rem;
+  font-family: var(--main-font);
+  border: 2px solid var(--black-color);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%; 
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section form {
+  background-color: var(--code3-color);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--main-font);
+    padding: 40px;
+    border-style: solid;
+    border-color: var(--black-color);
+    border-radius: 20px;
+  }
+  
+  section input[type='text'],
+  section input[type='email'],
+  section input[type='std_num'],
+  section textarea,
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: solid;
+    border-color: var(--black-color);
+    outline: none;
+    background: var(--code4-color);
+  }
+  
+  section input[type='text'],
+  section input[type='email'],
+  section input[type='std_num'] {
+    height: 50px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--code4-color);
+  }
+
+
+  section input[type='submit']{
+    background-color: var(--code2-color);
+    font-family: var(--main-font);
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  section textarea {
+    height: 200px;
+  }
+
+  .title{
+    width: fit-content;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--main-font);
+  }

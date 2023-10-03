@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <section>
+        <div class="logo"><h1>Attendance Form</h1></div>
+        <form name="form" onsubmit="return validate()" action="https://my.its.ac.id/" method="post">
+            <div class="title"><a>Full Name</a></div>
+            <input maxlength="50" minlength="2" type="text" name="Name" placeholder="Full Name">
+
+            <div class="title"><a>Student Number</a></div>
+            <input maxlength="10" minlength="10" type="std_num" name="Std_Num" placeholder="50xxxxxxxx">
+
+            <div class="title"><a>Email</a></div>
+            <input maxlength="30" minlength="10" type="email" name="Email" placeholder="example@gmail.com">
+
+            <div class="title"><a>Faculty</a></div>
+            <select name="faculty" class="form-control" id="facultySelect">
+                <option value="0">Choose Your Faculty</option>
+                <option value="1">F-SCIENTICS</option>
+                <option value="2">F-MARTECH</option>
+                <option value="3">F-INDSYS</option>
+                <option value="4">F-ELECTICS</option>
+                <option value="5">F-CIVPLAN</option>
+                <option value="6">F-CREABIZ</option>
+                <option value="7">F-VOCATION</option>
+              </select>
+
+              <div class="title"><a>Department</a></div>
+              <select name="department" class="form-control" id="departmentSelect">
+                <option value="0">Choose Your Department</option>
+                <option value="1" class="faculty-1">Physics</option>
+                <option value="2" class="faculty-1">Chemistry</option>
+                <option value="3" class="faculty-1">Biology</option>
+                <option value="4" class="faculty-1">Mathematics</option>
+                <option value="5" class="faculty-1">Statistics</option>
+                <option value="6" class="faculty-1">Acuatial Science</option>
+                <option value="7" class="faculty-2">Naval Architecture and Shipbuilding Engineering</option>
+                <option value="8" class="faculty-2">Marine Engineering</option>
+                <option value="9" class="faculty-2">Ocean Engineering</option>
+                <option value="10" class="faculty-2">Sea Trasnportation Engineering</option>
+                <option value="11" class="faculty-2">Offshore Engineering</option>
+                <option value="12" class="faculty-3">MEchanical Engineering</option>
+                <option value="13" class="faculty-3">Chemical Engineering</option>
+                <option value="14" class="faculty-3">Engineering Physics</option>
+                <option value="15" class="faculty-3">Industrial and System Engineering</option>
+                <option value="16" class="faculty-3">Materials and MEtallurgical Engineering</option>
+                <option value="17" class="faculty-3">Food Engineering</option>
+                <option value="18" class="faculty-4">Informatics</option>
+                <option value="19" class="faculty-4">Information System</option>
+                <option value="20" class="faculty-4">Information Technology</option>
+                <option value="21" class="faculty-4">Electrical Engineering</option>
+                <option value="22" class="faculty-4">Computer Engineering</option>
+                <option value="23" class="faculty-4">Biomedical Engineering</option>
+                <option value="24" class="faculty-5">Civil Engineering</option>
+                <option value="25" class="faculty-5">Architecture</option>
+                <option value="26" class="faculty-5">Environmental Engineering</option>
+                <option value="27" class="faculty-5">Urban and Regional Engineering</option>
+                <option value="28" class="faculty-5">Geomatics Engineering</option>
+                <option value="29" class="faculty-5">Geophysics Engineering</option>
+                <option value="30" class="faculty-6">Product Design</option>
+                <option value="31" class="faculty-6">Business Management</option>
+                <option value="32" class="faculty-6">Interior Design</option>
+                <option value="33" class="faculty-6">Visual Communication Design</option>
+                <option value="34" class="faculty-6">Development Studies</option>
+                <option value="35" class="faculty-7">Civil Infrastructure Engineering</option>
+                <option value="36" class="faculty-7">Industrial Mechanical Engineering</option>
+                <option value="37" class="faculty-7">Automation Electronic Engineering</option>
+                <option value="38" class="faculty-7">Industrial Chemical Engineering</option>
+                <option value="39" class="faculty-7">Instrumentation Engineering</option>
+                <option value="40" class="faculty-7">Business Statistics</option>
+              </select>
+
+            <input type="submit" value="Submit">
+          </form>
+    </section>
+</body>
+</html>
